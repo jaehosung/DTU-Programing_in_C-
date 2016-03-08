@@ -53,30 +53,26 @@ void fraction::display(){
 
 int main(){
     int num11,den11,num12,den12;
-    int num21,den21,num22,den22;
-    int num31,den31,num32,den32;
     string trash;
     string op;
 
-    cin>>num11>>trash>>den11>>op>>num12>>trash>>den12;
-    cin>>num21>>trash>>den21>>op>>num22>>trash>>den22;
-    cin>>num31>>trash>>den31>>op>>num32>>trash>>den32;
+    while(1){
+        cin>>num11>>trash>>den11>>op>>num12>>trash>>den12;
+        if(cin.fail()){
+            break;
+        }
+        fraction test11(num11,den11);
+        fraction test12(num12,den12);
 
-    fraction test11(num11,den11);
-    fraction test12(num12,den12);
-    test11.add(test12);
-
-    fraction test21(num21,den21);
-    fraction test22(num22,den22);
-    test21.mult(test22);
-
-    fraction test31(num31,den31);
-    fraction test32(num32,den32);
-    test31.div(test32);
-
-    test11.display();
-    test21.display();
-    test31.display();
+        if(op == "+"){
+            test11.add(test12);
+        }else if(op == "*"){
+            test11.mult(test12);
+        }else if(op == "div"){
+            test11.div(test12);
+        }
+        test11.display();
+    }
 
     return 0;
 }
