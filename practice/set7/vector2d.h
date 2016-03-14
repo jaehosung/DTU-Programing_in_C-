@@ -12,7 +12,7 @@ public:
     // builds a vector that is exactly as v
     v2d(const v2d & v);
     // destructor
-    //~v2d(void);
+    ~v2d(void);
 
     // computes the length of a vector
     double length();
