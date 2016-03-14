@@ -27,3 +27,4 @@ book/**
 *.exe
 *.out
 *.app
+*.swp
