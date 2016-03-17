@@ -14,7 +14,8 @@ int main(){
             bag.insert(num);
         }else if(state == "del"){
             cin >>num;
-            bag.erase(bag.find(num));
+            if(bag.count(num)>0)
+                bag.erase(bag.find(num));
         }else if(state == "qry"){
             cin >>num;
             if(bag.count(num)!=0){
