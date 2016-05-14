@@ -9,6 +9,7 @@
 
 // A library, can of course need other libraries
 #include <string>
+#include "live02-my_sweet_library.cpp"
 
 using namespace std;
 

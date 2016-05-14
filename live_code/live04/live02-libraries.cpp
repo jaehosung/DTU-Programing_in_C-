@@ -5,7 +5,7 @@
 //#include "live02-my_sweet_library.h"
 // I don't need to include the implementation
 // if my compiler knows how to compile and link it
-#include "live02-my_sweet_library.cpp"
+#include "live02-my_sweet_library.h"
 
 using namespace std;
 
